@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://fb.me/react-with-addons-15.1.0.js"></script>
+<script src="https://fb.me/react-dom-15.1.0.js"></script>
+
+<head>
+  <link rel="stylesheet" href="././src/App.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="box">
+    <h2 style="text-align:center">회원가입</h2>
+    <hr>
+    <div id="frame">
+      <div id = "frame2">
+        <label class = 'label' for='name'>이름</label><br>
+        <input id = 'name' onkeyup="checkn()" value=''><br>
+        <p id = 'name2'>필수 입력 항목입니다.</p>
+        <label class = 'label' for='nickname'>닉네임</label><br>
+        <input id ='nickname' onkeyup="checknick()" value=''><br>
+        <p id = 'nickname2'>닉네임은 2~5글자로 구성해주세요</p>
+        <label class = 'label' for='email'>이메일</label><br>
+        <input id='email' onkeyup='checkemail()'><br>
+        <p id = 'email2'>올바른 메일 형식이 아닙니다.</p>
+        <label class = 'label' for='password'>비밀번호</label><br>
+        <input id='password' onkeyup="checkp()"><br>
+        <p id='password2'>영어+숫자+특수문자를 조합하여 작성해주세요</p>
+        <label class = 'label' for='passwordck'>비밀번호 확인</label><br>
+        <input id='passwordck' onkeyup="checkpck()"><br>
+        <p id='passwordck2'>비밀번호가 일치하지 않습니다.</p>
+        <br>
+      </div>
+      <div id="assign">
+        <button onclick='modalopen()' id="button" disabled=false style="margin-bottom:30px;">가입하기</button>
+            <div id="modal" style="  position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;">
+        <div style="background: white;
+        padding: 24px 16px;
+        border-radius: 4px;
+        width: 320px;">
+            <h2>가입 성공!</h2>
+            <p>UMC 챌린저 가입을 축하합니다!!</p>
+            <button onclick="modalclose()">닫기</button>
+        </div>
+    </div>
+      </div>
+     </div>
+  </div>
+</body>
+<script>
+
+</script>
+
+</html>
