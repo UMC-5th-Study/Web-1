@@ -1,0 +1,36 @@
+#name{
+}
+#box{
+  width:40%;
+  margin:0 auto;
+  border-radius:10px;
+  background-color:rgb(146,149,160,0.5);
+}
+#box hr{
+  color:1px solid white;
+  width:40%;
+  
+}
+#frame{
+  width:40%;
+  margin:0 auto;
+  text-align:center;
+}
+#frame2{
+  width:70%;
+  margin:0 auto;
+  text-align:left;
+}
+#asign{
+  width:50%;
+  margin:0 auto;
+}
+input{
+  border:1px solid white;
+  background-color:rgb(154,156,166);
+  border-radius:5px;
+  width:100%;
+}
+p{
+  font-size:1px;
+}
