@@ -1,0 +1,83 @@
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 30px;
+    background-color: rgb(34, 37, 75);
+    /* 각 그리드 아이템 사이의 간격을 설정합니다. */
+}
+
+.movie-item {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 150px;
+    background-color: rgb(55, 59, 105);
+}
+
+
+.movie-poster {
+    width: 100%;
+    /*포스터 너비*/
+    height: 100%;
+    /*포스터 높이*/
+    object-fit: cover;
+    /* 이미지를 늘리거나 줄일 때 비율을 유지하도록 설정합니다. */
+}
+
+.movie-title {
+    font-size: 10px;
+    height: 15%;
+    display: inline;
+    float: left;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    /* 제목과 포스터 사이의 간격을 설정합니다. */
+}
+
+.title {
+    font-size: 12px;
+    color: white;
+    margin: 5px;
+}
+
+.overview {
+    font-size: 10px;
+    height: 75%;
+    color: white;
+    margin: 5px;
+    text-align: left;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(55, 59, 105, 0.5);
+}
+
+.movie-average {
+    margin-top: 5px;
+    font-size: 10px;
+    color: white;
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+
+.index-block {
+    height: 100%;
+    display: inline;
+}
+
+.image-m {
+    height: 90%
+}
+
+.poster-m {
+    position: relative;
+}
+
+.h {}
