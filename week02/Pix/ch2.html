@@ -8,6 +8,7 @@
             background-size: cover;
         }
     </style>
+    <script defer src="ch2.js"></script>
 </head>
 <body>
     
@@ -16,15 +17,30 @@
             <h1 class="signin-title">회원 가입</h1>
             <hr>
             <label>이름<label><br>
-            <input id="name" name="name" required="true">
-            <br><label>닉네임</label><br>
-            <input id="username" name="username" minlength="2" maxlength="5" required="true">
-            <br><label>이메일</label><br>
-            <input id="email" name="email" pattern=".+@+.+.com" required="true">
-            <br><label>비밀번호</label><br>
-            <input id="password" name="password" type="password" required="true">
-            <br><label>비밀번호 확인</label><br>
-            <input id="password_check" name="password_check" type="password" required="true">
+            <input id="name" name="name">
+            <div id="good_name">멋진 이름이네요!</div>
+            <div id="bad_name">(박스에 값이 없다면) 필수 입력 항목입니다!</div>
+
+            <label>닉네임</label><br>
+            <input id="username" name="username">
+            <div id="good_username">멋진 닉네임이군요!</div>
+            <div id="bad_username">(닉네임이 2~5글자가 아니라면) 닉네임은 2~5글자로 구성해주세요!</div>
+
+            <label>이메일</label><br>
+            <input id="email" name="email">
+            <div id="good_email">올바른 메일 형식입니다!</div>
+            <div id="bad_email">(메일이 ~@~.com형태가 아니라면) 올바른 메일 형식이 아닙니다!</div>
+
+            <label>비밀번호</label><br>
+            <input id="password" name="password" type="password">
+            <div id="good_pw">안전한 비밀번호입니다!</div>
+            <div id="bad_pw">(영어 숫자 특수문자 외 문자가 있다면) 영어+숫자+특수문자를 조합하여 작성해주세요.</div>
+
+            <label>비밀번호 확인</label><br>
+            <input id="password_check" name="password_check" type="password">
+            <div id="good_pwc">비밀번호가 일치합니다.</div>
+            <div id="bad_pwc">(비밀번호가 일치하지 않는다면) 비밀번호가 일치하지 않습니다.</div>
+            
             <br>
             <button id="signin">가입하기</button>
         </div>
