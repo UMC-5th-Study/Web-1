@@ -1,8 +1,9 @@
 import nav_style from "../styles/nav_style";
 import { Link } from 'react-router-dom';
-
+import LoginControl from "./LoginControl";
 
 function Nav(){
+    
     return (
         <nav_style.Nav_div>
         <div>
@@ -18,6 +19,7 @@ function Nav(){
             <nav_style.Menu_li><nav_style.StyleLink to={'/Tv'}>TV 프로그램</nav_style.StyleLink></nav_style.Menu_li>
             <nav_style.Menu_li><nav_style.StyleLink to={'/Celebrity'}>인물</nav_style.StyleLink></nav_style.Menu_li>
         </nav_style.Nav_ul>
+            <LoginControl.LoginControl/>
         </nav_style.Nav_div>
     );
 }
