@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import login from './login/login';
-import logout from './login/logout';
 
 const Header = () => {
+    const navigate = useNavigate();
     const headerStyle = {
         display: 'flex',
         alignItems: 'center',
@@ -31,6 +30,7 @@ const Header = () => {
 
     const handleLogin = () => {
         setLs(!ls)
+        navigate('/Login')
     }
 
     return (

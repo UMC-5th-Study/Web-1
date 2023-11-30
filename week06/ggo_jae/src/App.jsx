@@ -8,6 +8,7 @@ import Ad from "./Components/Ad";
 import MovieIndex from "./Components/pages/MovieIndex";
 import Movie from "./Components/movie/Movie";
 import NotFound from "./Components/pages/NotFound";
+import Login from "./Components/login/login"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           작성해줘야됨!!!!! */}
           <Route path="/movie/:title" element={<MovieIndex />} />
           <Route path="/*" element={<NotFound />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Ad />
       </BrowserRouter>
