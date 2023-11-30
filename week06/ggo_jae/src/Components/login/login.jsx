@@ -42,7 +42,7 @@ const Login = () => {
 
                     />
                     {!isValidEmail && (
-                        <p style={{ color: 'red' }}>올바른 이메일 형식으로 작성해주세요.</p>
+                        <p style={{ color: 'red' }}>올바른 이메일 형식으로 작성해주세요</p>
                     )}
                 </div>
             </div>
