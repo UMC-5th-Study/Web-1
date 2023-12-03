@@ -9,6 +9,7 @@ import MovieIndex from "./Components/pages/MovieIndex";
 import Movie from "./Components/movie/Movie";
 import NotFound from "./Components/pages/NotFound";
 import Login from "./Components/login/login"
+import Weather from "./Components/pages/Weather";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/movie/:title" element={<MovieIndex />} />
           <Route path="/*" element={<NotFound />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/Weather" element={<Weather />} />
         </Routes>
         <Ad />
       </BrowserRouter>
