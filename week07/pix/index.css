@@ -39,6 +39,7 @@
   font-weight: 600;
 }
 
+
 .page-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -52,12 +53,27 @@
 }
 
 .movie-container {
+  position: relative;
   width: 250px;
   margin: 16px;
   background-color: #373b69;
   color: white;
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.movie-overview {
+  display: none;
+  position: absolute;
+  padding: 15px;
+  font-size: 18px;
+  height: calc(100% - 30px);
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 5px;
+}
+
+.movie-container:hover .movie-overview {
+  display: block;
 }
 
 .movie-container img {
@@ -78,3 +94,6 @@
 .movie-info span {
   margin-left: 3px;
 }
+
+
+

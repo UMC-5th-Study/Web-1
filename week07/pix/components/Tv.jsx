@@ -12,16 +12,15 @@ export default function Tv(props) {
         })
     }
 
-    
-
     return (
         <div className="movie-container" onClick={onClickMovieItem}>
+            <div className='movie-overview'>{props.overview}</div>
             <img src={IMG_BASE_URL + props.poster_path} alt="tv포스터" />
             <div className='movie-info'>
                 <h4>{props.name}</h4>
                 <span>{props.vote_average}</span>
             </div>
-            <div className='movie-overview'>{props.overview}</div>
+            
         </div>
     );
 }

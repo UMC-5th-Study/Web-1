@@ -14,12 +14,12 @@ export default function Movie(props) {
 
     return (
         <div className="movie-container" onClick={onClickMovieItem}>
+            <div className='movie-overview'>{props.overview}</div>
             <img src={IMG_BASE_URL + props.poster_path} alt="영화포스터" />
             <div className='movie-info'>
                 <h4>{props.title}</h4>
                 <span>{props.vote_average}</span>
             </div>
-            <div className='movie-overview'>{props.overview}</div>
         </div>
     );
 }
