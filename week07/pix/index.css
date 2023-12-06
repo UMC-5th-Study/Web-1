@@ -39,6 +39,21 @@
   font-weight: 600;
 }
 
+.loginbutton {
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 14px 8px 14px;
+  margin: -8px 0 -8px 0;
+  font-weight: 600;
+  font-size: 18px;
+  border:none;
+  cursor: pointer;
+}
+
+.loginword {
+  color: white;
+  margin-left: 14px;
+}
 
 .page-container {
   max-width: 1400px;
@@ -95,5 +110,54 @@
   margin-left: 3px;
 }
 
+.ad-img {
+  width: 1200px;
+  display: flex;
+}
 
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
 
+.login-container h1 {
+  font-size: large;
+  font-weight: 500;
+}
+
+.login-info {
+  padding-top: 30px;
+  font-size: small;
+}
+
+.login-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:300px;
+  height: 40px;
+  border-radius: 7px;
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 10px;
+  font-size: x-small;
+}
+
+.redredred {
+  color: red;
+  font-size: smaller;
+}
+
+.login-check {
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  border-style: none;
+  background-color: #0e253f;
+  color: white;
+  font-size: x-small;
+  border-radius: 20px;
+  padding: 10px;
+}
