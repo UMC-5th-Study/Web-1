@@ -39,6 +39,22 @@
   font-weight: 600;
 }
 
+.loginbutton {
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 14px 8px 14px;
+  margin: -8px 0 -8px 0;
+  font-weight: 600;
+  font-size: 18px;
+  border:none;
+  cursor: pointer;
+}
+
+.loginword {
+  color: white;
+  margin-left: 14px;
+}
+
 .page-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -52,12 +68,27 @@
 }
 
 .movie-container {
+  position: relative;
   width: 250px;
   margin: 16px;
   background-color: #373b69;
   color: white;
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.movie-overview {
+  display: none;
+  position: absolute;
+  padding: 15px;
+  font-size: 18px;
+  height: calc(100% - 30px);
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 5px;
+}
+
+.movie-container:hover .movie-overview {
+  display: block;
 }
 
 .movie-container img {
@@ -77,4 +108,56 @@
 
 .movie-info span {
   margin-left: 3px;
+}
+
+.ad-img {
+  width: 1200px;
+  display: flex;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.login-container h1 {
+  font-size: large;
+  font-weight: 500;
+}
+
+.login-info {
+  padding-top: 30px;
+  font-size: small;
+}
+
+.login-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:300px;
+  height: 40px;
+  border-radius: 7px;
+  border-color: darkgray;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 10px;
+  font-size: x-small;
+}
+
+.redredred {
+  color: red;
+  font-size: smaller;
+}
+
+.login-check {
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  border-style: none;
+  background-color: #0e253f;
+  color: white;
+  font-size: x-small;
+  border-radius: 20px;
+  padding: 10px;
 }
