@@ -1,5 +1,5 @@
 import React from 'react'
-import Movie from '../components/Movie'
+import Movie from '../components/Movie/Movie'
 import { dummy } from "../movieDummy";
 
 export default function Movies() {
@@ -13,6 +13,7 @@ export default function Movies() {
                         title={item.title}
                         poster_path={item.poster_path}
                         vote_average={item.vote_average}
+                        overview={item.overview}
                     />
                     )
                 })
