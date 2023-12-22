@@ -1,14 +1,16 @@
 import React from 'react'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function LoginPage() {
 
     const [emailError, setEmailError] = useState(false);
     const [email, setEmail] = useState('');
+    const navigate = useNavigate();
 
     const handleEmailChange = (e) => {
         const emailValue = e.target.value;
-        const emailRegex =/^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+        const emailRegex =/^[A-Za-z0-9_.-]+@[A-Za-z0-9-]+\.[A-Za-z0-9-]+/;
 
         setEmail(emailValue);
 
@@ -20,7 +22,9 @@ export default function LoginPage() {
     }
 
     const checkIt = () => {
-
+        if (!emailError && email !== '') {
+            navigate('/');
+        }
     };
 
   return (
