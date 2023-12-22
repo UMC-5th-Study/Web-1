@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Tvtv from "./pages/Tv";
 import TvDetail from "./pages/TvDetail";
 import LoginPage from "./pages/LoginPage";
+import LogoutPage from "./pages/LogoutPage";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/person" element={<Celebrity />} />
           <Route path="/*" element={<NotFound />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/logout" element={<LogoutPage />} />
         </Routes>
       </BrowserRouter>
     </div>
