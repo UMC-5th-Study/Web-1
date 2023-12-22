@@ -1,8 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import LoginControl from './LoginControl';
 
 export default function Header() {
+    const location = useLocation();
+    if (location.pathname === '/login') return null;
+
     return (
         <div className='header-container'>
             <div className='header-wrap'>
